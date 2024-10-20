@@ -1,0 +1,117 @@
+# contains commands to generate all test files
+# lines starting with hash (#) are comments
+# set the language/syntax to "bash" to give this file good highlighting
+
+# 'start' is where counting starts in this script,
+# but the files generated in tests/ still begin at 000.
+start=0
+
+
+# write your testscript here
+
+# Sample Test Cases
+# ! cat test1.in > $
+! cat test2.in > $
+! cat test3.in > $
+
+# Generated Test Cases
+gen_random 3 20 3 n n t1 > $
+gen_random 3 20 3 n n t2 > $
+gen_random 3 20 3 n n t3 > $
+gen_random 3 20 3 y n t1 > $
+gen_random 3 20 3 y n t2 > $
+gen_random 3 20 3 y n t3 > $
+
+gen_random 3 100 20 n n t1 > $
+gen_random 3 100 20 n n t2 > $
+gen_random 3 100 20 n n t3 > $
+gen_random 3 100 20 y n t1 > $
+gen_random 3 100 20 y n t2 > $
+gen_random 3 100 20 y n t3 > $
+
+gen_random 3 2000 100 n n t1 > $
+gen_random 3 2000 100 n n t2 > $
+gen_random 3 2000 100 n n t3 > $
+gen_random 3 2000 100 y n t1 > $
+gen_random 3 2000 100 y n t2 > $
+gen_random 3 2000 100 y n t3 > $
+
+gen_random 2000 2000 5 n n t1 > $
+gen_random 2000 2000 5 n n t2 > $
+gen_random 2000 2000 5 n n t3 > $
+gen_random 2000 2000 5 y n t1 > $
+gen_random 2000 2000 5 y n t2 > $
+gen_random 2000 2000 5 y n t3 > $
+
+gen_random 2000 2000 10 n n t1 > $
+gen_random 2000 2000 10 n n t2 > $
+gen_random 2000 2000 10 n n t3 > $
+gen_random 2000 2000 10 y n t1 > $
+gen_random 2000 2000 10 y n t2 > $
+gen_random 2000 2000 10 y n t3 > $
+
+gen_random 2000 2000 100 n n t1 > $
+gen_random 2000 2000 100 n n t2 > $
+gen_random 2000 2000 100 n n t3 > $
+gen_random 2000 2000 100 y n t1 > $
+gen_random 2000 2000 100 y n t2 > $
+gen_random 2000 2000 100 y n t3 > $
+
+gen_random 2000 2000 1000 n n t1 > $
+gen_random 2000 2000 1000 n n t2 > $
+gen_random 2000 2000 1000 n n t3 > $
+gen_random 2000 2000 1000 y n t1 > $
+gen_random 2000 2000 1000 y n t2 > $
+gen_random 2000 2000 1000 y n t3 > $
+
+gen_random 200000 200000 1000 n n t1 > $
+gen_random 200000 200000 1000 n n t2 > $
+gen_random 200000 200000 1000 n n t3 > $
+gen_random 200000 200000 1000 y n t1 > $
+gen_random 200000 200000 1000 y n t2 > $
+gen_random 200000 200000 1000 y n t3 > $
+
+gen_random 200000 200000 10000 n n t1 > $
+gen_random 200000 200000 10000 n n t2 > $
+gen_random 200000 200000 10000 n n t3 > $
+gen_random 200000 200000 10000 y n t1 > $
+gen_random 200000 200000 10000 y n t2 > $
+gen_random 200000 200000 10000 y n t3 > $
+
+gen_random 200000 200000 100000 n n t1 > $
+gen_random 200000 200000 100000 n n t2 > $
+gen_random 200000 200000 100000 n n t3 > $
+gen_random 200000 200000 100000 y n t1 > $
+gen_random 200000 200000 100000 y n t2 > $
+gen_random 200000 200000 100000 y n t3 > $
+
+gen_random 200000 200000 10000 n y t1 > $
+gen_random 200000 200000 10000 n y t2 > $
+gen_random 200000 200000 10000 n y t3 > $
+
+gen_random 200000 200000 100000 n y t1 > $
+gen_random 200000 200000 100000 n y t2 > $
+gen_random 200000 200000 100000 n y t3 > $
+
+gen_random 200000 200000 190000 n y t1 > $
+gen_random 200000 200000 190000 n y t2 > $
+gen_random 200000 200000 190000 n y t3 > $
+
+gen_random 1000000000 200000 100000 n n t1 > $
+gen_random 1000000000 200000 100000 n n t2 > $
+gen_random 1000000000 200000 100000 n n t3 > $
+gen_random 1000000000 200000 100000 y n t1 > $
+gen_random 1000000000 200000 100000 y n t2 > $
+gen_random 1000000000 200000 100000 y n t3 > $
+
+# example:
+
+# you can run an arbitrary command via "!"
+# ! cat sample.in > $
+
+# otherwise, the program is searched through "generators" in details.json
+# gen_random 10 10 > $
+# gen_random 10 100 > $
+# gen_random 10 1000 > $
+# gen_random 10 10000 > $
+# gen_random 10 100000 > $

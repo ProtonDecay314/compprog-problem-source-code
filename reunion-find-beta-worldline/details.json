@@ -1,0 +1,39 @@
+{
+    "title": "Reunion Find: Beta Worldline",
+    "model_solution": "sol.cpp",
+    "validator": "validator.py",
+    "testscript": "testscript",
+    "generators": [
+        "gen_random.py"
+    ],
+    "other_programs": [
+        "formatter.py",
+        "utils.py"
+    ],
+    "subtask_detector": "detector.cpp",
+    "valid_subtasks": [
+        {"id": 1, "score": 5},
+        {"id": 2, "score": 5},
+        {"id": 3, "score": 10},
+        {"id": 4, "score": 10},
+        {"id": 5, "score": 15},
+        {"id": 6, "score": 20},
+        {"id": 7, "score": 25},
+        {"id": 8, "score": 10}
+    ],
+    "subtasks_files": "subtasks.json",
+    "statement": "statement.md",
+
+    "comments": [
+        "Harder version of Reunion Find from PCPC '24",
+        "Intended solution is persistent DSU with an implicit array",
+        "You can place comments here. They will not be processed.",
+        "Leave valid_subtasks blank to make a binary problem.",
+        "If you need a custom checker, add the field: checker.",
+        "There are also a couple of builtin checkers.",
+        "For a custom checker template, see:",
+        "examples/templates/checker_generic_template.py"
+    ],
+    "time_limit": 4,
+    "version": "0.2"
+}
